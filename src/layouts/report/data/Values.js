@@ -24,7 +24,9 @@ function Values(selectedDevice) {
   
         const response = await fetch(`${config.server.hostname}:${config.server.port}${config.apiKeys.getDevReport}`, {
           headers: {
+
             device_id: selectedDevice,
+
           },
         });
 
